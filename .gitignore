@@ -1,0 +1,5 @@
+*.code-workspace
+template.pdf
+test/
+*.pdf
+!main.pdf
