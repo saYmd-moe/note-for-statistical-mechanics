@@ -1,4 +1,4 @@
-#import "@preview/i-figured:0.2.2"
+#import "@preview/i-figured:0.2.3"
 #import "@preview/physica:0.8.1": *
 #import "@preview/pinit:0.1.2": *
 #import "@preview/cetz:0.1.2"
@@ -54,7 +54,7 @@
   show heading.where(level:1): it => box(width: 100%)[
     #set align(center)
     #v(0.50em)
-    #set text(font: heading-font)
+    #set text(font: heading-font, size: 1.75em)
     #custom-counter(it)
     #h(.5em)
     #it.body
@@ -62,14 +62,20 @@
   show heading.where(level:2): it => box(width: 100%)[
     #set align(left)
     #v(0.50em)
-    #set text(font: heading-font)
+    #set text(font: heading-font, size: 1.5em)
     #custom-counter(it)
     #h(.5em)
     #it.body
   ]
   show heading.where(level:3): it => box(width: 100%)[
     #set align(left)
-    #v(0.50em)
+    #set text(font: heading-font, size: 1.25em)
+    #custom-counter(it)
+    #h(.5em)
+    #it.body
+  ]
+  show heading.where(level:4): it => box(width: 100%)[
+    #set align(left)
     #set text(font: heading-font)
     #custom-counter(it)
     #h(.5em)
@@ -78,11 +84,6 @@
 
 
   // 设置目录样式
-  //show outline.entry: it => {
-  //  custom-counter(it)
-  //  it
-  //}
-
   show outline.entry: it => {
 
     strong(custom-counter(it))
@@ -110,9 +111,11 @@
 
   // Main body
   set par(first-line-indent: 2em)
-  set enum(indent: 2em)
+  set list(indent: 3em)
+  set enum(indent: 3em)
   //set figure(gap: 0.8cm)
   //set math.equation(numbering: "(1)")
+  set math.equation(supplement: [式])
 
   show figure: it => [
     //#v(12pt)
@@ -150,7 +153,12 @@
   // 使用 i-figure 包添加章节编号
   //show heading: i-figured.reset-counters
   show figure: i-figured.show-figure
-  show math.equation: i-figured.show-equation
+  show math.equation: it => i-figured.show-equation(
+    it,
+    level: 1,
+    leading-zero: false,
+    numbering: "(1-1)",
+  )
 
   set bibliography(style: "mla")
 
@@ -162,12 +170,14 @@
     #outline(
       title: "目录",
       indent: .75em,
-      depth: 4
+      depth: 3
       )
     ]
 
   counter(heading.where(level:1)).update(0)
   counter(heading.where(level:2)).update(0)
+
+  pagebreak()
 
   body
   
