@@ -4,6 +4,7 @@
 #import "@preview/cetz:0.1.2"
 
 #import "./utils/custom-numbering.typ": custom-numbering
+#import "./utils/custom-counter.typ": custom-counter
 
 
 #let conf(
@@ -14,8 +15,6 @@
   author: none,
   email: none,
   date: datetime.today(),
-
-  numbering-part: custom-numbering.with(first-level: "第一章 ", depth: 3, "1.1"),
 
   body
 
@@ -51,71 +50,44 @@
   // 设置英文、中文字体
   set text(font: ("Times New Roman", body-font))
 
-  
-
-
   // 设置标题样式
-  // 自定义 counter 
-  let part_counter = counter("part")
-  let chp_counter = counter("chp")
-
-  
-
-  show heading.where(level: 1): it => box(width: 100%)[
-    #if it.body == [目录]{
-      set text(font: heading-font,size: 1.2em)
-      it.body
-    } else {
-    part_counter.step()
-    set align(center)
-    v(0.50em)
-    set text(font: heading-font)
-    part_counter.display("第一部分")
-    h(0.75em)
-    it.body
-  }]
-
-  show heading.where(level: 2): it => box(width: 100%)[
-    #chp_counter.step(level: 1)
+  show heading.where(level:1): it => box(width: 100%)[
+    #set align(center)
+    #v(0.50em)
+    #set text(font: heading-font)
+    #custom-counter(it)
+    #h(.5em)
+    #it.body
+  ]
+  show heading.where(level:2): it => box(width: 100%)[
     #set align(left)
     #v(0.50em)
     #set text(font: heading-font)
-    #chp_counter.display("第一章")
-    #h(0.75em)
+    #custom-counter(it)
+    #h(.5em)
     #it.body
   ]
-
-  show heading.where(level: 3): it => box(width: 100%)[
-    #chp_counter.step(level: 2)
+  show heading.where(level:3): it => box(width: 100%)[
     #set align(left)
     #v(0.50em)
     #set text(font: heading-font)
-    #chp_counter.display("1.1")
-    #h(0.75em)
+    #custom-counter(it)
+    #h(.5em)
     #it.body
   ]
 
-  show heading.where(level: 4): it => box(width: 100%)[
-    #chp_counter.step(level: 3)
-    #set align(left)
-    #v(0.50em)
-    #set text(font: heading-font)
-    #chp_counter.display("1.1.1")
-    #h(0.75em)
-    #it.body
-  ]
 
-  // 目录
-  show outline.entry.where(
-  level: 1
-  ): it => {
-    v(12pt, weak: true)
-    part_counter.display("第一部分")
-    h(1em)
-    strong(it)
+  // 设置目录样式
+  //show outline.entry: it => {
+  //  custom-counter(it)
+  //  it
+  //}
+
+  show outline.entry: it => {
+
+    strong(custom-counter(it))
+    it
   }
-
-  set bibliography(style: "mla")
 
   // Title
   align(center)[
@@ -180,7 +152,26 @@
   show figure: i-figured.show-figure
   show math.equation: i-figured.show-equation
 
+  set bibliography(style: "mla")
+
+  [
+    #show heading: it => box(width: 100%)[
+      #it.body
+    ]
+
+    #outline(
+      title: "目录",
+      indent: .75em,
+      depth: 4
+      )
+    ]
+
+  counter(heading.where(level:1)).update(0)
+  counter(heading.where(level:2)).update(0)
+
   body
+  
+
 }
 
 
