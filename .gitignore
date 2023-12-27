@@ -1,5 +1,5 @@
 *.code-workspace
 template.pdf
-test/
+tests/
 *.pdf
 !main.pdf
