@@ -5,6 +5,7 @@
 #let heading2 = counter(heading.where(level:2))
 #let heading3 = counter(heading.where(level:3))
 #let heading4 = counter(heading.where(level:4))
+#let heading5 = counter(heading.where(level:5))
 
 // 一个自定义的计数器
 #let custom-counter(it) = {
@@ -25,5 +26,10 @@
     heading4.step()
     heading2.step(level: 3)
     heading2.display("1.1.1 ")
+  }
+  if it.level == 5 {
+    heading5.step()
+    heading2.step(level: 4)
+    heading2.display("1.1.1.i ")
   }
 }

@@ -2,6 +2,8 @@
 #import "@preview/physica:0.8.1": *
 #import "@preview/pinit:0.1.2": *
 #import "@preview/cetz:0.1.2"
+#import "@preview/colorful-boxes:1.2.0": *
+
 
 #import "./utils/custom-numbering.typ": custom-numbering
 #import "./utils/custom-counter.typ": custom-counter
@@ -42,7 +44,7 @@
   }
 
   // 在第一页的页眉添加标题
-  set page(numbering: "1", number-align: center, header: align(left)[
+  set page(numbering: "1/1", number-align: center, header: align(left)[
     #set text(font: header-font)
     #shortitle
   ])
@@ -69,14 +71,21 @@
   ]
   show heading.where(level:3): it => box(width: 100%)[
     #set align(left)
-    #set text(font: heading-font, size: 1.25em)
+    #set text(font: heading-font, size: 1.5em)
     #custom-counter(it)
     #h(.5em)
     #it.body
   ]
   show heading.where(level:4): it => box(width: 100%)[
     #set align(left)
-    #set text(font: heading-font)
+    #set text(font: heading-font, size: 1.25em)
+    #custom-counter(it)
+    #h(.5em)
+    #it.body
+  ]
+  show heading.where(level:5): it => box(width: 100%)[
+    #set align(left)
+    #set text(font: heading-font, size: 1.05em)
     #custom-counter(it)
     #h(.5em)
     #it.body
@@ -114,8 +123,11 @@
   set list(indent: 3em)
   set enum(indent: 3em)
   //set figure(gap: 0.8cm)
-  //set math.equation(numbering: "(1)")
+  set math.equation(numbering: "(1)")
   set math.equation(supplement: [式])
+  set math.cases(gap: 1em)
+  set figure(supplement: [图])
+  set highlight(fill:rgb("39c5bb"))
 
   show figure: it => [
     //#v(12pt)
@@ -152,13 +164,13 @@
 
   // 使用 i-figure 包添加章节编号
   //show heading: i-figured.reset-counters
-  show figure: i-figured.show-figure
-  show math.equation: it => i-figured.show-equation(
-    it,
-    level: 1,
-    leading-zero: false,
-    numbering: "(1-1)",
-  )
+  //show figure: i-figured.show-figure
+  //show math.equation: it => i-figured.show-equation(
+  //  it,
+  //  level: 1,
+  //  leading-zero: false,
+  //  numbering: "(1-1)",
+  //)
 
   set bibliography(style: "mla")
 
@@ -170,9 +182,9 @@
     #outline(
       title: "目录",
       indent: .75em,
-      depth: 3
+      depth: 4
       )
-    ]
+  ]
 
   counter(heading.where(level:1)).update(0)
   counter(heading.where(level:2)).update(0)
@@ -199,5 +211,24 @@
         body
       }
     )
+  )
+}
+
+// 定义几个标注函数
+#let note(body) = {
+  outlinebox(
+  body,
+  title: [#text(size: 1em)[✎ Note]],
+  radius: 5pt,
+  width: auto
+  )
+}
+#let example(body) = {
+  outlinebox(
+  body,
+  title: [#text(size: 1em)[ Example]],
+  color: "green",
+  radius: 5pt,
+  width: auto
   )
 }
