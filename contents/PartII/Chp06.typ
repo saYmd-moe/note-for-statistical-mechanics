@@ -275,7 +275,7 @@ $其中 $x equiv hbar omega\/k T = theta_v \/ T$，$theta_v equiv hbar omega\/k$
 
 ==== 多原子分子理想气体
 
-TODO
+#text(red)[\#TODO多原子分子理想气体的计算]
 
 === 弱简并理想气体
 
@@ -298,7 +298,7 @@ cases(
   display(U &= - diff/(diff beta) ln Xi = (3/2 1/beta) (2 pi V)/(h^3) F(alpha) = (- F(alpha)/(F'(alpha))) 3/2 N k T = 3/2 k T V/lambda_T^3 g_(5\/2)(z)),
   display(p &= 1/beta diff/(diff V) ln Xi = -(2pi)/h^3 ((2m)/beta)^(3\/2) F(alpha) = (-F(alpha)/(F(alpha))) (N k T)/V = 1/(beta lambda_T^3)g_(5\/2)(z)),
 )
-$<bose-gas>其中热波长 $lambda_T equiv h\/(2 pi m k T)^(1\/2)$，逸度 (_fugacity_) $z equiv e^(-alpha)$ 。取一阶小量近似（ #text(red)[\#TODO] 过程略）可以得到：$
+$<bose-gas>其中热波长 $lambda_T equiv h\/(2 pi m k T)^(1\/2)$，逸度 (_fugacity_) $z equiv e^(-alpha)$ 。取一阶小量近似（ #text(red)[\#TODO过程略]）可以得到：$
 U = 3/2 N k T (1 - (n lambda^3)/(4 sqrt(2))) \
 p = n R T (1 - (n lambda^3)/(4 sqrt(2)))
 $
