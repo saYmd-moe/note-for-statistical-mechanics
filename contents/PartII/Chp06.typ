@@ -218,7 +218,7 @@ $
 Z^t &= sum_lambda g_lambda^t e^(-beta epsilon_lambda^t)= integral (dif omega^t)/h^3 e^(-beta epsilon^t)\
 &= 1/h^3 integral.triple dif x dif y dif z integral.triple dif p_x dif p_y dif p_z e^(-(p_x^2+p_y^2+p_z^2)\/2 m k T) \
 &= V/h^3 (2 pi m k T)^(3\/2)
-$对于束缚电子运动能量的配分函数，由于束缚电子基态能级 $epsilon_0^e$ 与第一激发能级 $epsilon_1^e$ 之间能量差远大于 $k T$，所以束缚电子运动能量的配分函数可以只取基态能级：$
+$<gas-partition-function>对于束缚电子运动能量的配分函数，由于束缚电子基态能级 $epsilon_0^e$ 与第一激发能级 $epsilon_1^e$ 之间能量差远大于 $k T$，所以束缚电子运动能量的配分函数可以只取基态能级：$
 Z^e = sum_lambda g_lambda^e e^(-beta epsilon_lambda^e) approx g_0^e e^(-beta epsilon_0^e)
 $于是便可计算平动和束缚电子运动的平均能量和热容：$
 macron(epsilon^t) = - diff/(diff beta) ln Z^t = 3/2 k T&, quad C_V^t = N (dif macron(epsilon^t))/(dif T) = 3/2 N k\
@@ -233,7 +233,7 @@ S &= N k (ln Z - beta diff/(diff beta) ln Z) - k ln N! \
 
 mu &=- k T ln Z/N = - k T ln{((2 pi m k T)^(3\/2)g_0^e)/(n h^3)}\
 &= -k T ln{((2 pi m)^(3\/2)(k T)^(5\/2) g_0^e)/(p h ^3)}
-$
+$<single-atom-gas-thermo>
 
 ==== 双原子分子理想气体
 

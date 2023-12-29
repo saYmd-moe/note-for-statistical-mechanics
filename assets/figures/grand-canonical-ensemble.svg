@@ -1,0 +1,95 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="316" height="177"
+        style="
+        width:316px;
+        height:177px;
+        background: transparent;
+        fill: none;
+">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area">
+                <g class="shapes-region" style="stroke: black; fill: none;">
+                        <g class="composite-shape">
+                                <path class="real" d=" M8.67,11.33 L258,11.33 L258,160.67 L8.67,160.67 Z"
+                                        style="stroke-width: 1; stroke: rgb(0, 0, 0); fill: none; fill-opacity: 1;" />
+                        </g>
+                        <g class="arrow-line">
+                                <path class="connection real" stroke-dasharray=""
+                                        d="  M292.67,59.33 C277.15,61.27 272.92,71.37 259.29,83.53"
+                                        style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none; fill-opacity: 1;" />
+                                <g stroke="#000"
+                                        transform="matrix(0.7567669227188125,-0.653684805298929,0.653684805298929,0.7567669227188125,258,84.66666666666667)"
+                                        style="stroke: rgb(0, 0, 0); stroke-width: 1;">
+                                        <path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29" />
+                                </g>
+                        </g>
+                        <g class="composite-shape">
+                                <path class="real"
+                                        d=" M113.22,92.41 C111.01,110.97 95.97,125.33 77.75,125.33 C58.01,125.33 42,108.47 42,87.67 C42,66.86 58.01,50 77.75,50 C96.28,50 111.52,64.86 113.32,83.88 L77.75,87.67 Z"
+                                        style="stroke-width: 1; stroke: none; fill: none; fill-opacity: 1;" />
+                                <path class="real"
+                                        d=" M113.22,92.41 C111.01,110.97 95.97,125.33 77.75,125.33 C58.01,125.33 42,108.47 42,87.67 C42,66.86 58.01,50 77.75,50 C96.28,50 111.52,64.86 113.32,83.88"
+                                        style="stroke-width: 1; stroke: rgb(0, 0, 0); fill: none; fill-opacity: 1;" />
+                        </g>
+                        <g class="composite-shape">
+                                <path class="real"
+                                        d=" M117.45,84.05 C119.41,53.86 145.19,30.67 175.53,32.06 C206.25,33.46 230.01,59.49 228.61,90.2 C227.21,120.91 201.18,144.68 170.47,143.28 C142.3,141.99 119.97,119.99 117.55,92.65 L173,87.67 Z"
+                                        style="stroke-width: 1; stroke: none; fill: none; fill-opacity: 1;" />
+                                <path class="real"
+                                        d=" M117.45,84.05 C119.41,53.86 145.19,30.67 175.53,32.06 C206.25,33.46 230.01,59.49 228.61,90.2 C227.21,120.91 201.18,144.68 170.47,143.28 C142.3,141.99 119.97,119.99 117.55,92.65"
+                                        style="stroke-width: 1; stroke: rgb(0, 0, 0); fill: none; fill-opacity: 1;" />
+                        </g>
+                        <g class="arrow-line">
+                                <path class="connection real" stroke-dasharray="" d="  M113.32,83.88 L117.38,83.88"
+                                        style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none; fill-opacity: 1;" />
+                        </g>
+                        <g class="arrow-line">
+                                <path class="connection real" stroke-dasharray="" d="  M113.5,92.65 L117.55,92.65"
+                                        style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none; fill-opacity: 1;" />
+                        </g>
+                        <g />
+                </g>
+                <g />
+                <g />
+                <g />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="314" height="175"
+                style="width:314px;height:175px;font-family:Asana-Math, Asana;background:transparent;">
+                <g>
+                        <g>
+                                <g><text x="75.65625" y="71.65625"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">1</text>
+                                </g>
+                        </g>
+                        <g>
+                                <g><text x="67" y="88.453125"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">系统</text>
+                                </g>
+                        </g>
+                </g>
+                <g>
+                        <g>
+                                <g><text x="170.984375" y="61.328125"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">2</text>
+                                </g>
+                        </g>
+                        <g>
+                                <g><text x="156.328125" y="78.125"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">大热源</text>
+                                </g>
+                        </g>
+                        <g>
+                                <g><text x="150.328125" y="94.921875"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">大粒子源</text>
+                                </g>
+                        </g>
+                </g>
+                <g>
+                        <g>
+                                <g><text x="275" y="45"
+                                                style="white-space:pre;stroke:none;fill:rgb(0,0,0);fill-opacity:1;font-size:10.5px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(0, 0, 0);">孤立系</text>
+                                </g>
+                        </g>
+                </g>
+        </svg>
+</svg>

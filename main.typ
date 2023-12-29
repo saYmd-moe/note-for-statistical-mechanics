@@ -8,20 +8,18 @@
 )
 
 //----------------热力学部分----------------
-= 热力学
+#include "./contents/PartI/PartI.typ"
 
-//#include "./contents/PartI/Chp01.typ"
-//#include "./contents/PartI/Chp02.typ"
+#include "./contents/PartI/Chp01.typ"
+#include "./contents/PartI/Chp02.typ"
 #include "./contents/PartI/Chp03.typ"
-//#include "./contents/PartI/Chp04.typ"
+#include "./contents/PartI/Chp04.typ"
 
 //-----------------------------------------
-//#pagebreak()
+#pagebreak()
 //----------------统计力学部分----------------
-//= 统计力学
+#include "./contents/PartII/PartII.typ"
 
-//#include "./contents/PartII/PartII.typ"
-
-//#include "./contents/PartII/Chp05.typ"
-//#include "./contents/PartII/Chp06.typ"
-//#include "./contents/PartII/Chp07.typ"
+#include "./contents/PartII/Chp05.typ"
+#include "./contents/PartII/Chp06.typ"
+#include "./contents/PartII/Chp07.typ"
