@@ -2,9 +2,9 @@
 
 == 均匀系的平衡关系
 
-=== Maxwell 关系
+=== _Maxwell_ 关系
 
-通过热力学基本微分方程 $dif U = T dif S - p dif V$ 二阶微商可换序的性质，我们可以得到一系列Maxwell关系式：$
+通过热力学基本微分方程 $dif U = T dif S - p dif V$ 二阶微商可换序的性质，我们可以得到一系列_Maxwell_关系式：$
 &dif U = ((diff U)/(diff S))_V dif S + ((diff U)/(diff V))_S dif V = T dif S - p dif V\
 arrow.double& T = ((diff U)/(diff S))_V, quad p = - ((diff U)/(diff V))_S
 $
@@ -17,7 +17,7 @@ $
     columns: (auto, auto, auto),
     inset: 10pt,
     align: horizon,
-    [*微分方程*], [*变量*],[*Maxwell 关系*],
+    [*微分方程*], [*变量*],[*_Maxwell_ 关系*],
     [$dif U = T d S - p dif V$], [$(S,V)$],[$((diff T)/(diff V))_S=-((diff p)/(diff S))_V$],
     [$dif H = T dif S + V dif p$], [$(S,p)$],[$((diff T)/(diff p))_S=((diff V)/(diff S))_p$],
     [$dif F = -S dif T - p dif V$], [$(T,V)$],[$((diff S)/(diff V))_T=((diff p)/(diff T))_V$],
@@ -28,7 +28,7 @@ $
 (diff(T,S))/(diff(x,y)) = (diff(p,V))/(diff(x,y))
 $分别取$(x,y)$为$(V,S),(p,S),(T,V),(T,p)$即可得到上面的四个Maxwell关系式。
 
-=== Maxwell关系的应用
+=== _Maxwell_关系的应用
 
 ==== 状态变量与物态方程的联系
 
@@ -74,7 +74,7 @@ dif U = C_V dif T + [T ((diff p)/(diff T))_V - p] dif V\
 U(T,V) = integral_((T_0,V_0))^((T,V)) {C_V dif T + [T ((diff p)/(diff T))_V - p] dif V} + U(T_0,V_0)\
 $运用同样的方式也可以确定熵 $S(T,V)$，或者以 $(T,p)$ 为变量下的焓 $H(T,p)$。
 
-=== 特性函数和Joule-Thomson效应
+=== 特性函数和_Joule-Thomson_效应
 
 #colorbox(
   title: [特性函数],
@@ -88,12 +88,12 @@ $运用同样的方式也可以确定熵 $S(T,V)$，或者以 $(T,p)$ 为变量�
 ]
 
 #colorbox(
-  title: [Joule-Thomson效应],
+  title: [_Joule-Thomson_效应],
   color: "blue",
   radius: 5pt,
   width: auto
 )[
-  Joule-Thomson效应是指节流过程中温度随压强会发生变化的现象。有 Joule-Thomson系数定义为：$
+  _Joule-Thomson_效应是指节流过程中温度随压强会发生变化的现象。有 _Joule-Thomson_系数定义为：$
   mu equiv ((diff T)/(diff p))_H = V/C_p (T alpha -1)
   $节流过程是一个不可逆的等焓过程，当 $mu gt 0$ 时，节流过程中温度降低，称为致冷区；当 $mu lt 0$ 时，节流过程中温度升高，称为致温区；当 $mu eq 0$ 时，节流过程中温度不变，称为反转曲线。
 ]
