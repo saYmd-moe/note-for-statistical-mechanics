@@ -103,6 +103,7 @@
   align(center)[
     #block(text(font: title-font, weight: 700, 1.75em, title))
     #v(0.5em)
+    #block(text(font: title-font, weight: 700, 1.25em, shortitle))
   ]
 
   // Author information.
@@ -192,8 +193,6 @@
   pagebreak()
 
   body
-  
-
 }
 
 
