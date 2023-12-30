@@ -46,7 +46,7 @@ $
 
 #h(2em)通过物态方程 @eq-of-stat 我们可以定义一些物理量：
 + *膨胀系数* $alpha$，表示压强不变的条件下体积随温度的相对变化率$ alpha equiv 1/V ((diff V)/(diff T))_p $
-+ *压强系数* $beta$，表示体积不变的条件下压强随体积的相对变化率$ beta equiv 1/p ((diff p)/(diff V))_V $
++ *压强系数* $beta$，表示体积不变的条件下压强随温度的相对变化率$ beta equiv 1/p ((diff p)/(diff T))_V $
 + *等温压缩系数* $kappa_T$，表示温度不变的条件下体积随压强的相对变化率$ kappa_T equiv -1/V ((diff V)/(diff p))_T $
 
 #h(2em)两种常用物态方程：
