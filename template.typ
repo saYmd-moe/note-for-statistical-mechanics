@@ -113,7 +113,7 @@
     bottom: 0.25em,
     x: 0.25em,
   )[
-    #set text(font: ("Times New Roman", author-font))
+    #set text(font: ("Times New Roman", author-font),size: 1.5em)
     #author
     #par()[#email]
   ]

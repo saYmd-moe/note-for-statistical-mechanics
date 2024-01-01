@@ -4,7 +4,7 @@
 #show: conf.with(
   title: "热力学与统计物理笔记整理",
   shortitle: "Note for Thermodynamics and Statistical Mechanics",
-  author: "saYmd"
+  author: "刘钊-2021303304"
 )
 
 //----------------热力学部分----------------
