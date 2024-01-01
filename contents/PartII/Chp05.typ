@@ -60,7 +60,7 @@ cases(
   display(N = e^(-alpha) dot Z) \
   display(U = -N diff/(diff beta) ln Z) \
   display(Y_l = -N/beta diff/(diff y_l) ln Z) \
-  display(S = N k (ln Z - 1/beta diff/(diff beta) ln Z) + S_0)
+  display(S = N k (ln Z - beta diff/(diff beta) ln Z) + S_0)
 )
 $这些表达式建立起宏观热力学量与微观状态之间的联系，可以看到只要我们得到子系配分函数 $Z$ 就可以计算出宏观热力学量。
 
@@ -73,7 +73,7 @@ ln W_(#text[_M.B._]) &= N ln N - sum_lambda a_lambda ln a_lambda/g_lambda \
 &= N ln N + alpha N + beta macron(E) \
 &= N (ln Z - beta diff/(diff beta) ln Z)
 $于是得到_Boltzmann_关系：$
-S = N k (ln Z - beta diff/(diff beta) ln Z)= N k ln W_(#text[_M.B._])
+S = k (ln Z - beta diff/(diff beta) ln Z)= N k ln W_(#text[_M.B._])
 $只需要得到系统总量子态数 $W_(#text[_M.B._])$，就可以通过简单的取对数得到总熵 $S$ 。
 
 ==== 定域子系的经典极限条件

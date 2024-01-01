@@ -16,7 +16,7 @@ N = macron(a)_1 + macron(a)_2
 $解得：$
 macron(a)_1 = 1/2 (N - macron(E)/epsilon), quad macron(a)_2 = 1/2 (N + macron(E)/epsilon)
 $于是系统总量子态数：$
-W(macron(a)_1, macron(a)_2) = N!/(macron(a)_1! macron(a)_2!) = N!/(1/2 (N - macron(E)/epsilon)! 1/2 (N + macron(E)/epsilon)!)
+W(macron(a)_1, macron(a)_2) = N!/(macron(a)_1 ! macron(a)_2 !) = N!/([1/2 (N - macron(E)/epsilon)]! [1/2 (N + macron(E)/epsilon)]!)
 $由_Boltzmann_关系：$
 S = k ln W &approx k {N ln N - 1/2 (N - macron(E)/epsilon) ln [1/2 (N - macron(E)/epsilon)] \
 &- 1/2 (N + macron(E)/epsilon) ln [1/2 (N + macron(E)/epsilon)]}
@@ -60,7 +60,7 @@ $#v(2.5em)
 ]
 
 现在从波矢空间转到我们关心的频率空间中，由色散关系 $omega = c k$：$
-D(omega) dif omega = #pin(10) 2 times #pin(20)  V/(2 pi^2 c^3) omega^2 dif omega = V/( pi^2 c^3) omega^2 dif omega
+D^*(omega) dif omega = #pin(10) 2 times #pin(20)  V/(2 pi^2 c^3) omega^2 dif omega = V/( pi^2 c^3) omega^2 dif omega
 $#v(3.5em)
 #pinit-highlight-equation-from((10, 20), 20, height: 2.5em, pos: bottom, fill: green)[
   正反两个偏振方向引起的修正因子

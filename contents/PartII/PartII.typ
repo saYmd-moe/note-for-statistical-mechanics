@@ -39,7 +39,7 @@ sum_lambda epsilon_lambda a_lambda = E.
 $
 
 直接给出最可几分布的形式，后续小节补充推导过程（使用 _Stirling_ 公式和_Lagrange_乘子法得到）：$
-macron(a)_lambda = g_lambda/(e^(-alpha - beta epsilon_lambda) + eta), quad 
+macron(a)_lambda = g_lambda/(e^(alpha + beta epsilon_lambda) + eta), quad 
 eta = cases(
   plus 1\, quad &#[_Fermi-Dirac_分布],
   0\, &#[_Maxwell-Boltzmann_分布],

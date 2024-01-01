@@ -179,7 +179,7 @@ $现在做两点假设：
 + 蒸汽相可看作理想气体
 于是有：$
 dif p = (L)/(T v) dif T \
-ln p = -L_0/(R T) = integral (dif T)/(R T^2) integral (c_p - c'_p) dif T + A \
+ln p = -L_0/(R T) + integral (dif T)/(R T^2) integral (c_p - c'_p) dif T + A \
 ln p = A - B/T + C ln T
 $计算过程是将相变潜热 $L = L(T)$ 看作 $T$ 的函数，省略过程，另外给出相变潜热 $L$ 看作常数时的蒸汽压方程：$
 ln p = - L/(R T) + A
