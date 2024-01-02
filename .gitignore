@@ -2,4 +2,3 @@
 template.pdf
 tests/
 *.pdf
-!main.pdf

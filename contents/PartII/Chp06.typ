@@ -300,14 +300,14 @@ cases(
 )
 $<bose-gas>其中热波长 $lambda_T equiv h\/(2 pi m k T)^(1\/2)$，逸度 (_fugacity_) $z equiv e^(-alpha)$ 。取一阶小量近似（ #text(red)[\#TODO过程略]）可以得到：$
 U = 3/2 N k T (1 - (n lambda^3)/(4 sqrt(2))) \
-p = n R T (1 - (n lambda^3)/(4 sqrt(2)))
+p = n k T (1 - (n lambda^3)/(4 sqrt(2)))
 $
 
 ==== 弱简并理想_Fermi_气体
 
 计算过程与弱简并理想_Bose_气体相同，直接给出结果：$
 U = 3/2 N k T (1 + (n lambda^3)/(4 sqrt(2))) \
-p = n R T (1 + (n lambda^3)/(4 sqrt(2)))
+p = n k T (1 + (n lambda^3)/(4 sqrt(2)))
 $
 
 ==== 统计关联
@@ -378,7 +378,7 @@ $其中 $macron(N)_0$ 和 $macron(N)_(op("exc"))$ 分别为基态和所有激发
 ==== 强简并理想_Fermi_气体(金属中的自由电子气)
 
 强简并理想_Fermi_气体满足 $e^alpha lt.double 1$，我们来研究金属中的自由电子气体，这种电子气满足：自旋 $s = 1\/2$，无外磁场时两个取向的能量相等，所以计算态密度 $D(epsilon)$ 时记得乘上因子 $2$。计算巨配分函数$
-ln Xi &= sum_lambda ln(1+e^(-alpha-beta epsilon_lambda)) = integral (dif omega)/h^2 ln(1+e^(-alpha-beta epsilon_lambda)) \
+ln Xi &= sum_lambda ln(1+e^(-alpha-beta epsilon_lambda)) = integral (dif omega)/h^3 ln(1+e^(-alpha-beta epsilon_lambda)) \
 &= integral_0^infinity D(epsilon) ln(1+e^(-alpha-beta epsilon_lambda)) dif epsilon\
 &= (4 pi V)/h^3 (2m)^(3\/2) integral_0^infinity ln(1+e^(-alpha-beta epsilon_lambda)) epsilon^(1\/2) dif epsilon
 $热力学量使用_Fermi_分布函数 $f_lambda = macron(a_lambda)\/g_lambda = sum_lambda 1\/(e^(alpha+beta epsilon_lambda)+1)$ 来表示：$
