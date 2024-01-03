@@ -272,7 +272,7 @@ $代入，得：$
 &Xi = sum_(N=0)^infinity (e^(-alpha) Z)^N/N! = exp(e^(-alpha) Z)\
 &ln Xi = e^(-alpha) Z = V/h^3 (2 pi m k T)^(3\/2) e^(-alpha)
 $于是热力学量：$
-macron(N) &= -diff/(diff alpha) ln Xi = e^(-alpha) Z arrow.double mu - k T alpha = k T ln [(n h^3)/(2 pi m k T)^(3\/2)]\
+macron(N) &= -diff/(diff alpha) ln Xi = e^(-alpha) Z arrow.double mu = - k T alpha = k T ln [(n h^3)/(2 pi m k T)^(3\/2)]\
 macron(E) &= -diff/(diff beta) ln Xi = 3/2 macron(N) k T\
 p &= 1/beta diff/(diff V) ln Xi = (macron(N) k T)/V = n k T\
 S &= k (ln Xi - alpha diff/(diff alpha) ln Xi - beta diff/(diff beta) ln Xi)\
